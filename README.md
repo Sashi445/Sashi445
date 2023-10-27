@@ -5,8 +5,6 @@
 
 - 📫 How to reach me **sashidhar652@gmail.com**
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1aHC_DUDhZ_f_t_f7LFmd8nwI9fCmHGiu/view?usp=sharing](https://drive.google.com/file/d/1aHC_DUDhZ_f_t_f7LFmd8nwI9fCmHGiu/view?usp=sharing)
-
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/sashidharmotte" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="sashidharmotte" height="30" width="40" /></a>
