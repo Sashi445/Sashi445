@@ -8,6 +8,10 @@
 - 📫 How to reach me **sashidharmotte@gmail.com**
 
 ### Blogs posts
+<<<<<<< HEAD
+=======
+
+>>>>>>> 65f3ecf (first commit)
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
