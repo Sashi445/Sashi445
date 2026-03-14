@@ -26,7 +26,7 @@ export function AppleHero() {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="mb-4 sm:mb-6 lg:mb-8 inline-block"
           >
-            <Avatar className="size-40 sm:size-40 lg:size-60 ring-1 ring-black/[0.08] dark:ring-white/[0.08]">
+            <Avatar className="size-28 sm:size-28 lg:size-60 ring-1 ring-black/[0.08] dark:ring-white/[0.08]">
               <AvatarImage src={avatarImage} alt="Sashidhar Motte" />
               <AvatarFallback className="text-3xl sm:text-4xl font-bold">
                 SM
