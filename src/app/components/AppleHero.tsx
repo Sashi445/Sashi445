@@ -79,7 +79,7 @@ export function AppleHero() {
             transition={{ duration: 0.6, delay: 2.2, ease: [0.16, 1, 0.3, 1] }}
             className="text-[16px] sm:text-[17px] lg:text-[19px] leading-[1.5] text-foreground/80 max-w-[720px] mx-auto mb-6 sm:mb-8 lg:mb-12 font-normal"
           >
-            I'm an applied AI engineer with a strong product mindset. I build
+            I'm an AI engineer with a strong product mindset. I build
             intelligent systems that solve real problems, combining deep
             expertise in AI/ML with full-stack development to create products
             people love. From ideation to deployment, I craft experiences that
