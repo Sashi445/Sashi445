@@ -9,10 +9,23 @@ export function AppleContact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Thank you for reaching out! I will get back to you soon.");
-    setFormData({ name: "", email: "", message: "" });
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      }),
+    });
+
+    if (res.ok) {
+      alert("Message sent!");
+    } else {
+      alert("Something went wrong.");
+    }
   };
 
   const handleChange = (
