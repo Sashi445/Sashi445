@@ -4,6 +4,24 @@ import { ArrowUpRight } from "lucide-react";
 export function AppleProjects() {
   const projects = [
     {
+      title: "RL Driven LLM Reasoning & Fact-Checking",
+      period: "Sep 2025 - Nov 2025",
+      description:
+        "Reinforcement learning framework training a small language model to reason and fact-check using internal search tags.",
+      technologies: ["Python", "PyTorch", "veRL", "SmolLM2"],
+      metrics: [
+        { label: "Accuracy Improvement", value: "3.3x" },
+        { label: "Final Accuracy", value: "40%+" },
+      ],
+      highlights: [
+        "Engineered an RL framework training SmolLM2-1.7B to use internal reasoning and search tags for automated fact-checking",
+        "Achieved a 3.3x increase in accuracy (from 12% to 40%+) by transitioning to Reinforcement Learning with GRPO",
+        "Optimized training stability by implementing GRPO, increasing efficiency by eliminating the Critic network",
+        "Developed a hybrid retrieval system using e5-base-v2 embeddings to effectively solve hallucinations",
+      ],
+      link: "https://github.com/Sashi445/search-r1-implementation-RL",
+    },
+    {
       title: "Unified Speech and Translation Toolkit",
       period: "June 2025 - July 2025",
       description:
@@ -35,20 +53,20 @@ export function AppleProjects() {
       ],
       link: "https://github.com/Sashi445/CraigslistAdRetrieval",
     },
-    {
-      title: "Social Media Content Reach Simulation",
-      period: "August 2021 – December 2021",
-      description:
-        "Agent-based modeling project simulating content propagation across social networks.",
-      technologies: ["NetLogo", "Agent-Based Modeling", "Simulation"],
-      highlights: [
-        "Created multi-agent simulation environment",
-        "Modeled user behavior and content interactions",
-        "Analyzed reach patterns under different scenarios",
-        "Visualized network effects and engagement metrics",
-      ],
-      link: "https://github.com/Sashi445/abms-nlogo-project-model",
-    },
+    // {
+    //   title: "Social Media Content Reach Simulation",
+    //   period: "August 2021 – December 2021",
+    //   description:
+    //     "Agent-based modeling project simulating content propagation across social networks.",
+    //   technologies: ["NetLogo", "Agent-Based Modeling", "Simulation"],
+    //   highlights: [
+    //     "Created multi-agent simulation environment",
+    //     "Modeled user behavior and content interactions",
+    //     "Analyzed reach patterns under different scenarios",
+    //     "Visualized network effects and engagement metrics",
+    //   ],
+    //   link: "https://github.com/Sashi445/abms-nlogo-project-model",
+    // },
   ];
 
   return (
