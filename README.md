@@ -15,8 +15,6 @@ I build intelligent systems that solve real problems, combining deep expertise i
 - **Agentic AI & LLMs:** Multi-agent systems, tool-use and function calling, RAG, fine-tuning (LoRA/QLoRA, PEFT), RLHF-style training (GRPO/PPO), LangChain, LlamaIndex.
 - **Computer Vision:** Change detection, object detection, segmentation, face recognition, CLIP and vision-language models.
 - **ML Engineering:** Python, PyTorch, model training & evaluation, quantization, on-device/edge inference, ONNX, MLOps, Docker.
-- **Full-Stack:** FastAPI, React, Next.js, TypeScript, TailwindCSS — for actually shipping the models, not just training them.
-
 ---
 
 ### Featured Projects
