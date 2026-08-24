@@ -21,6 +21,8 @@ export function AppleSkills() {
     {
       title: "LLM & GenAI",
       skills: [
+        "LangChain",
+        "LangGraph",
         "LoRA",
         "QLoRA",
         "PEFT",

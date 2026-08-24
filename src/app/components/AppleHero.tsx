@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { Mail, MapPin, ArrowUpRight } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 import avatarImage from "./../../assets/bitmoji.png";
+import avatarImage2 from "./../../assets/avatar.jpeg";
 import { TypewriterText } from "./TypewriterText";
 
 export function AppleHero() {
@@ -27,7 +28,7 @@ export function AppleHero() {
             className="mb-4 sm:mb-6 lg:mb-8 inline-block"
           >
             <Avatar className="size-28 sm:size-28 lg:size-60 ring-1 ring-black/[0.08] dark:ring-white/[0.08]">
-              <AvatarImage src={avatarImage} alt="Sashidhar Motte" />
+              <AvatarImage src={avatarImage2} alt="Sashidhar Motte" />
               <AvatarFallback className="text-3xl sm:text-4xl font-bold">
                 SM
               </AvatarFallback>

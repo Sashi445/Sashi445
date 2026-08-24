@@ -4,7 +4,7 @@
 
 Currently pursuing my **Master's in Computer Science** at the **University at Buffalo** (Graduating June 2026).
 
-I'm a CS master's student at the **University at Buffalo** focused on AI/ML. 
+I'm a CS master's student at the **University at Buffalo** focused on AI/ML.
 
 I build intelligent systems that solve real problems, combining deep expertise in AI/ML with full-stack development to create products people love. From ideation to deployment, I craft experiences that blend innovation with practicality.
 
@@ -15,11 +15,21 @@ I build intelligent systems that solve real problems, combining deep expertise i
 - **Agentic AI & LLMs:** Multi-agent systems, tool-use and function calling, RAG, fine-tuning (LoRA/QLoRA, PEFT), RLHF-style training (GRPO/PPO), LangChain, LlamaIndex.
 - **Computer Vision:** Change detection, object detection, segmentation, face recognition, CLIP and vision-language models.
 - **ML Engineering:** Python, PyTorch, model training & evaluation, quantization, on-device/edge inference, ONNX, MLOps, Docker.
+
 ---
 
 ### Featured Projects
 
+#### [weave-cv — Resume-Tailoring Agent (2.8k+ PyPI downloads)](https://github.com/Sashi445/weave-cv)
+
+A local-first CLI agent that tailors your resume to a job posting **without inventing anything new** — no fabricated metrics, no inflated scope. Point it at a job URL and your master `.tex` resume, and it reads both, decides what to lead with, rewords bullets to mirror the posting's language, verifies its own output against the original, and compiles a retargeted PDF. Built on a **LangGraph** state machine with concurrent JD/resume analysis, **Pydantic**-typed agent boundaries, and a two-pass verification layer (deterministic stable-ID diff + a narrow LLM faithfulness check that retries on drift). Provider-agnostic (OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek), agent/tool boundaries served over **MCP**, LaTeX rendering via **Tectonic**. Published to **PyPI** with a GitHub Actions CI/CD pipeline using OIDC trusted publishing — **2.8k+ downloads**.
+
+`pip install weave-cv`
+
+[![PyPI Downloads](https://static.pepy.tech/badge/weave-cv)](https://pepy.tech/project/weave-cv)
+
 #### [DarkWatch — Satellite Change Detection](https://github.com/Sashi445/dark-watch)
+
 A two-stage pipeline that compares Sentinel-1 radar images years apart to spot what changed on the ground — and then identifies it (vehicles, planes, infrastructure). Built the whole SAR preprocessing chain from scratch (no SNAP), trained a **Siamese ResNet + UNet** change detector (**F1 0.80 / IoU 0.66**), and layered **YOLO11** on top for object detection. Wrapped it in a React + FastAPI dashboard with a before/after view on a 3D globe.
 
 #### [LLM Fact-Checking via Reinforcement Learning](https://github.com/Sashi445/search-r1-implementation-RL)
@@ -41,6 +51,7 @@ Built a custom STT engine and an English-to-French translation model from scratc
 ---
 
 ### Currently into
+
 - Agentic systems — getting LLMs to plan, use tools, and run multi-step workflows without going off the rails.
 - Unsupervised face clustering and large-scale image feature indexing.
 - Newer CV work: SAM 2, depth estimation, and vision-language models.
@@ -49,14 +60,14 @@ Built a custom STT engine and an English-to-French translation model from scratc
 
 ### Technical Skills
 
-| Category | Technologies |
-| :--- | :--- |
-| **Languages** | Python, JavaScript, TypeScript, Java, C, C++, SQL |
-| **AI/ML** | PyTorch, TensorFlow, HuggingFace, OpenCV, scikit-learn, ONNX |
-| **LLMs & Agents** | LangChain, LlamaIndex, RAG, LoRA/QLoRA, PEFT, GRPO/PPO, function calling |
-| **Frontend** | React, Next.js, TypeScript, Redux, TailwindCSS, Vite, GSAP |
-| **Backend** | Node.js, Express, Spring Boot, FastAPI, Kafka, MongoDB, PostgreSQL |
-| **Tools & Platforms** | Linux, Docker, AWS, Git, CI/CD, MLOps |
+| Category              | Technologies                                                             |
+| :-------------------- | :----------------------------------------------------------------------- |
+| **Languages**         | Python, JavaScript, TypeScript, Java, C, C++, SQL                        |
+| **AI/ML**             | PyTorch, TensorFlow, HuggingFace, OpenCV, scikit-learn, ONNX             |
+| **LLMs & Agents**     | LangChain, LlamaIndex, RAG, LoRA/QLoRA, PEFT, GRPO/PPO, function calling |
+| **Frontend**          | React, Next.js, TypeScript, Redux, TailwindCSS, Vite, GSAP               |
+| **Backend**           | Node.js, Express, Spring Boot, FastAPI, Kafka, MongoDB, PostgreSQL       |
+| **Tools & Platforms** | Linux, Docker, AWS, Git, CI/CD, MLOps                                    |
 
 ---
 

@@ -4,6 +4,50 @@ import { ArrowUpRight } from "lucide-react";
 export function AppleProjects() {
   const projects = [
     {
+      title: "weave-cv: Resume-Tailoring Agent",
+      period: "July 2026 – Present",
+      description:
+        "Local-first CLI agent that tailors your resume to a job posting without fabricating experience, metrics, or scope. Published to PyPI with 2.8k+ downloads.",
+      technologies: [
+        "Python",
+        "LangGraph",
+        "Pydantic",
+        "MCP",
+        "LLM Agents",
+        "LaTeX",
+        "CI/CD",
+      ],
+      highlights: [
+        "Built a multi-agent LangGraph pipeline with concurrent job-posting and resume analysis",
+        "Designed an anti-fabrication verification layer: deterministic stable-ID diff plus a narrow LLM faithfulness check with bounded retries",
+        "Enforced typed Pydantic schemas at every agent boundary to make fact-preservation a checkable property",
+        "Made it provider-agnostic across OpenAI, Anthropic, Gemini, Groq, xAI, and DeepSeek",
+        "Shipped to PyPI (2.8k+ downloads) via GitHub Actions CI/CD with OIDC trusted publishing",
+      ],
+      link: "https://github.com/Sashi445/weave-cv",
+    },
+    {
+      title: "DarkWatch: SAR Satellite Change Detection",
+      period: "January 2026 – May 2026",
+      description:
+        "Two-stage pipeline that compares Sentinel-1 radar imagery years apart to detect ground-level change, then identifies what changed — vehicles, planes, infrastructure. Formally presented at a demo day.",
+      technologies: [
+        "Python",
+        "PyTorch",
+        "Computer Vision",
+        "YOLO11",
+        "FastAPI",
+        "React",
+      ],
+      highlights: [
+        "Built the full SAR preprocessing chain from scratch, without relying on SNAP",
+        "Trained a Siamese ResNet + UNet change detector achieving F1 0.80 / IoU 0.66",
+        "Layered YOLO11 on top for object detection on the changed regions",
+        "Wrapped it in a React + FastAPI dashboard with a before/after view on a 3D globe",
+      ],
+      link: "https://github.com/Sashi445/dark-watch",
+    },
+    {
       title: "RL Driven LLM Reasoning & Fact-Checking",
       period: "Sep 2025 - Nov 2025",
       description:
