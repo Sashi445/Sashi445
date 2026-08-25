@@ -18,11 +18,11 @@ I'm a CS grad from the University at Buffalo focused on AI/ML.
 
 ### Featured Projects
 
-#### [weave-cv — Resume-Tailoring Agent (2.8k+ PyPI downloads)](https://github.com/Sashi445/weave-cv) [![PyPI Downloads](https://static.pepy.tech/badge/weave-cv)](https://pepy.tech/project/weave-cv)
+#### [weave-cv — Resume-Tailoring Agent (2.8k+ PyPI downloads)](https://github.com/Sashi445/weave-cv) 
 
 A local-first CLI agent that tailors your resume to a job posting **without inventing anything new** — no fabricated metrics, no inflated scope. Point it at a job URL and your master `.tex` resume, and it reads both, decides what to lead with, rewords bullets to mirror the posting's language, verifies its own output against the original, and compiles a retargeted PDF. Built on a **LangGraph** state machine with concurrent JD/resume analysis, **Pydantic**-typed agent boundaries, and a two-pass verification layer (deterministic stable-ID diff + a narrow LLM faithfulness check that retries on drift). Provider-agnostic (OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek), agent/tool boundaries served over **MCP**, LaTeX rendering via **Tectonic**. Published to **PyPI** with a GitHub Actions CI/CD pipeline using OIDC trusted publishing — **2.8k+ downloads**.
 
-`pip install weave-cv`
+`pip install weave-cv` [![PyPI Downloads](https://static.pepy.tech/badge/weave-cv)](https://pepy.tech/project/weave-cv)
 
 
 #### [DarkWatch — Satellite Change Detection](https://github.com/Sashi445/dark-watch)
