@@ -1,81 +1,69 @@
-# Hi, I'm Sashidhar Motte 👋
+# Hi, I'm Sashi 👋
 
-### Applied AI/ML Engineer | Full-Stack Developer | Digital Craftsman
+**Applied AI/ML Engineer · Full-Stack Developer**
 
-I build intelligent systems that solve real problems, combining deep expertise in AI/ML with full-stack development to create products people love. From ideation to deployment, I craft experiences that blend innovation with practicality.
-
-I'm a CS grad from the University at Buffalo focused on AI/ML.
+I build products end to end, from the ML model to the backend to the UI that ships. MS in CS (AI/ML) from the University at Buffalo. Previously a full-stack engineer at Aspora (YC W22).
 
 ---
 
-### What I Work On
+### 🔨 Building now: StoryBoard
 
-- **Agentic AI & LLMs:** Multi-agent systems, tool-use and function calling, RAG, fine-tuning (LoRA/QLoRA, PEFT), RLHF-style training (GRPO/PPO), LangChain, LlamaIndex.
-- **Computer Vision:** Change detection, object detection, segmentation, face recognition, CLIP and vision-language models.
-- **ML Engineering:** Python, PyTorch, model training & evaluation, quantization, on-device/edge inference, ONNX, MLOps, Docker.
+A privacy-first media library that finds photos and videos from plain-language descriptions. Search runs on-device, the backend handles uploads and cloud imports at scale, and you can tag photos by voice. Launching on the App Store soon. Details are under Experience.
 
 ---
 
 ### Featured Projects
 
-#### [weave-cv — Resume-Tailoring Agent (2.8k+ PyPI downloads)](https://github.com/Sashi445/weave-cv) 
+#### [weave-cv](https://github.com/Sashi445/weave-cv): resume-tailoring agent · [![PyPI Downloads](https://static.pepy.tech/badge/weave-cv)](https://pepy.tech/project/weave-cv)
 
-A local-first CLI agent that tailors your resume to a job posting **without inventing anything new** — no fabricated metrics, no inflated scope. Point it at a job URL and your master `.tex` resume, and it reads both, decides what to lead with, rewords bullets to mirror the posting's language, verifies its own output against the original, and compiles a retargeted PDF. Built on a **LangGraph** state machine with concurrent JD/resume analysis, **Pydantic**-typed agent boundaries, and a two-pass verification layer (deterministic stable-ID diff + a narrow LLM faithfulness check that retries on drift). Provider-agnostic (OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek), agent/tool boundaries served over **MCP**, LaTeX rendering via **Tectonic**. Published to **PyPI** with a GitHub Actions CI/CD pipeline using OIDC trusted publishing — **2.8k+ downloads**.
+A local-first CLI that tailors a LaTeX resume to a job posting **without inventing anything**. A LangGraph pipeline analyzes the job and the resume, rewrites bullets to match the posting, then verifies every claim against the original using stable bullet IDs plus an LLM faithfulness check that retries on drift. Works with OpenAI, Anthropic, Gemini, Groq, xAI, and DeepSeek. Published to PyPI through GitHub Actions with OIDC trusted publishing.
 
-`pip install weave-cv` 
+```bash
+pip install weave-cv
+```
 
-[![PyPI Downloads](https://static.pepy.tech/badge/weave-cv)](https://pepy.tech/project/weave-cv)
+#### [DarkWatch](https://github.com/Sashi445/dark-watch): satellite change detection
 
+Compares Sentinel-1 radar images years apart to find what changed on the ground, then identifies it. I built the SAR preprocessing from scratch (calibration, speckle filtering, sub-pixel co-registration), trained a Siamese ResNet + UNet change detector (**F1 0.80 / IoU 0.66**, up from 0.59), and ran YOLO11 on flagged regions. Includes a React + FastAPI dashboard with before/after views on a 3D globe.
 
-#### [DarkWatch — Satellite Change Detection](https://github.com/Sashi445/dark-watch)
+#### More
 
-A two-stage pipeline that compares Sentinel-1 radar images years apart to spot what changed on the ground — and then identifies it (vehicles, planes, infrastructure). Built the whole SAR preprocessing chain from scratch (no SNAP), trained a **Siamese ResNet + UNet** change detector (**F1 0.80 / IoU 0.66**), and layered **YOLO11** on top for object detection. Wrapped it in a React + FastAPI dashboard with a before/after view on a 3D globe.
-
-#### [LLM Fact-Checking via Reinforcement Learning](https://github.com/Sashi445/search-r1-implementation-RL)
-
-Enhanced the fact-checking capabilities of Large Language Models by implementing RL loops to verify and ground model outputs against factual datasets.
-
-<!-- #### 🖼️ [Face Studio & Image Indexing](https://github.com/Sashi445/image-indexing-app)
-
-Built a comprehensive face recognition and clustering pipeline using **InsightFace** and **DBSCAN**. Developed a system for image feature extraction and knowledge graph creation using **CLIP** and custom-trained VLMs. -->
-
-<!-- #### 🎨 [No-Code UI Generation Tool](https://github.com/your-repo-link)
-
-Developed a low-latency UI generation tool using **GANs (VAE)**, allowing users to generate functional frontend components with minimal computational overhead. -->
-
-#### [Speech-to-Text & Translation Engine](https://github.com/Sashi445/speech_to_text_dl)
-
-Built a custom STT engine and an English-to-French translation model from scratch, including a video captioning system—all without relying on external APIs.
+- [**LLM fact-checking with RL**](https://github.com/Sashi445/search-r1-implementation-RL): RL training loops that ground model outputs against factual data.
+- [**Speech-to-text & translation**](https://github.com/Sashi445/speech_to_text_dl): STT and English→French translation models built from scratch, plus video captioning, with no external APIs.
 
 ---
 
-### Currently into
+### 💼 Experience
 
-- Agentic systems — getting LLMs to plan, use tools, and run multi-step workflows without going off the rails.
-- Unsupervised face clustering and large-scale image feature indexing.
-- Newer CV work: SAM 2, depth estimation, and vision-language models.
+**AI Engineer, University at Buffalo** (Oct 2025–present)
+- **Natural-language photo search:** built privacy-first search that finds photos from plain-language descriptions, indexing six signals per image (RAM tags, InsightFace faces, GIT captions, conditional OCR, color, EXIF).
+- **Hybrid retrieval:** combined BM25 keyword matching with MiniLM semantic search over FAISS and SQLite. Trained a lightweight text encoder on synthetic queries generated from photo metadata, and logged query feedback for future fine-tuning.
+- **On-device ML:** quantized the search model to under 6MB so search runs on the phone, with a hybrid cloud-device sync that keeps photos private.
+- **Cloud media backend:** designed the FastAPI + Supabase + GCS backend. Clients upload straight to storage with signed URLs, confirmed through Pub/Sub. Imports from Google Drive, Dropbox, and Box over OAuth PKCE.
+- **Library & data integrity:** built folders, tags, and search on transactional Postgres functions for cycle-safe moves and all-or-nothing bulk edits, serving search over 100K items in 25–40ms.
+- **AI voice tagging:** added voice tagging with gpt-4o-transcribe + gpt-4o-mini, turning a spoken description into categorized tags that reuse each user's existing vocabulary.
 
----
-
-### Technical Skills
-
-| Category              | Technologies                                                             |
-| :-------------------- | :----------------------------------------------------------------------- |
-| **Languages**         | Python, JavaScript, TypeScript, Java, C, C++, SQL                        |
-| **AI/ML**             | PyTorch, TensorFlow, HuggingFace, OpenCV, scikit-learn, ONNX             |
-| **LLMs & Agents**     | LangChain, LlamaIndex, RAG, LoRA/QLoRA, PEFT, GRPO/PPO, function calling |
-| **Frontend**          | React, Next.js, TypeScript, Redux, TailwindCSS, Vite, GSAP               |
-| **Backend**           | Node.js, Express, Spring Boot, FastAPI, Kafka, MongoDB, PostgreSQL       |
-| **Tools & Platforms** | Linux, Docker, AWS, Git, CI/CD, MLOps                                    |
+**Fullstack Engineer, Aspora (YC W22)** (Nov 2023–Nov 2024)
+- Led the rebuild of Alphadesk, the core ops platform (React + Spring Boot), handling KYC and support for 150K+ users and 10–15K queries a day.
+- Owned the NRI Compliance Tracker from concept to launch, capturing 3,000+ leads.
+- Built Vite/Rollup build tooling and a GenAI CMS content pipeline that contributed to a 5x increase in web traffic.
 
 ---
 
-### Connect with Me
+### 🧰 Tech Stack
 
-- **Portfolio:** [sashidharmotte.netlify.app](https://sashidharmotte.netlify.app/)
-- **LinkedIn:** [/in/sashidharmotte](https://www.linkedin.com/in/sashidharmotte)
-- **Location:** Buffalo, NY
+| Area | Tools |
+| :-- | :-- |
+| **Languages** | Python, TypeScript, JavaScript, Java, SQL, C/C++ |
+| **ML / Vision** | PyTorch, HuggingFace, ONNX, quantization, YOLO, SAM, CLIP, InsightFace, OpenCV |
+| **LLMs & Agents** | LangGraph, LangChain, RAG, tool calling, LoRA/QLoRA, vLLM |
+| **Retrieval** | FAISS, BM25, hybrid search, pgvector, sentence-transformers |
+| **Frontend & Mobile** | React, React Native, Expo, Next.js, TailwindCSS, Vite |
+| **Backend** | FastAPI, Spring Boot, Node.js, PostgreSQL, Supabase, Kafka, WebSockets |
+| **Cloud & DevOps** | GCP (GCS, Pub/Sub), AWS, Docker, GitHub Actions |
 
 ---
 
-_"From ideation to deployment, I craft experiences that blend innovation with practicality."_
+### 📫 Reach me
+
+[Portfolio](https://sashidharmotte.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/sashidharmotte) · sashidharmotte@gmail.com · Buffalo, NY (open to relocating)
