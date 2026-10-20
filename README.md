@@ -6,7 +6,7 @@ I build products end to end, from the ML model to the backend to the UI that shi
 
 ---
 
-### 🔨 Building now: StoryBoard
+### Building now: StoryBoard
 
 A privacy-first media library that finds photos and videos from plain-language descriptions. Search runs on-device, the backend handles uploads and cloud imports at scale, and you can tag photos by voice. Launching on the App Store soon. Details are under Experience.
 
