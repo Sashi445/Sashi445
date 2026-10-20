@@ -4,34 +4,39 @@ export function AppleExperience() {
   const experiences = [
     {
       company: "University at Buffalo",
-      role: "Research Assistant - AI Engineer",
+      role: "AI Engineer",
       period: "October 2025 - Present",
       location: "Buffalo, NY",
       highlights: [
         {
           title: "Natural Language Photo Search",
           description:
-            "Researched and built a photo search system that lets users find images using natural language instead of scrolling through thousands of photos.",
+            "Built privacy-first photo search that finds photos from plain-language descriptions, indexing six signals per image (RAM tags, InsightFace faces, GIT captions, conditional OCR, color, EXIF).",
         },
         {
-          title: "Custom Text Encoder Training",
+          title: "Hybrid Retrieval",
           description:
-            "Trained a lightweight text encoder on synthetically generated data from photo metadata, improving search recall from 62% to 92% on a personal photo dataset.",
+            "Combined BM25 keyword matching with MiniLM semantic search over FAISS and SQLite. Trained a lightweight text encoder on synthetic queries from photo metadata, improving recall from 62% to 92%, and logged query feedback for future fine-tuning.",
         },
         {
           title: "On-Device ML Pipeline",
           description:
-            "Worked on running the full search pipeline on mobile devices, figured out how to keep the model under 6MB while maintaining quality, using quantization and a hybrid cloud-device sync strategy.",
+            "Kept the search model under 6MB via quantization so search runs on-device, with a hybrid cloud-device sync strategy that keeps photos private.",
         },
         {
-          title: "Knowledge Graph for Memory Surfacing",
+          title: "Cloud Media Backend",
           description:
-            "Explored knowledge graphs as a way to surface interesting photo memories automatically, rather than waiting for users to search - connecting people, places, and activities across a gallery.",
+            "Designed the FastAPI, Supabase, and GCS backend with direct-to-storage signed uploads confirmed by Pub/Sub, plus Google Drive, Dropbox, and Box imports via OAuth PKCE.",
         },
         {
-          title: "Photo Indexing Pipeline",
+          title: "Library & Data Integrity",
           description:
-            "Built the indexing pipeline from scratch for face recognition, GPS reverse geocoding, and scene tagging. Figured out how to stitch all three into a single searchable representation per photo.",
+            "Built folders, tags, and search on transactional Postgres functions for cycle-safe moves and all-or-nothing bulk edits, serving search over 100K items in 25–40ms.",
+        },
+        {
+          title: "AI Voice Tagging",
+          description:
+            "Added voice tagging using gpt-4o-transcribe and gpt-4o-mini to turn a spoken description into categorized tags that reuse each user's existing vocabulary.",
         },
       ],
     },
@@ -45,53 +50,22 @@ export function AppleExperience() {
         {
           title: "Revamped Internal Dashboard (Alphadesk)",
           description:
-            "Led complete rebuild using ReactJS and Spring Boot. Enabled KYC verification, ticket tracking, and user support for 150K+ users across UAE and UK, handling 10-15K daily queries.",
+            "Led the end-to-end rebuild of the core operations platform in ReactJS and Spring Boot, powering KYC and support for 150K+ users across the UAE and UK and 10–15K daily queries across onboarding and bank transfers.",
         },
         {
-          title: "Website Optimization & SEO Growth",
+          title: "End-to-End Product Ownership",
           description:
-            "Built hybrid tools using Vite and Rollup integrating React and TypeScript. Automated CMS with GenAI, contributing to 5× traffic increase (2K to 11K monthly visits).",
+            "Owned the NRI Compliance Tracker from concept to launch, building the lead-generation funnel from scratch to capture 3,000+ leads and drive new customer signups.",
         },
         {
-          title: "NRI Compliance Tracker",
+          title: "Web Performance & SEO Growth",
           description:
-            "Built end-to-end product for NRI compliance tracking with lead funnel, generating 3,000+ qualified leads.",
+            "Engineered hybrid build tooling with Vite and Rollup and a GenAI pipeline that automated CMS content, contributing to a 5× increase in web traffic (2K to 11K monthly visits).",
         },
         {
-          title: "Product Analytics Dashboards",
+          title: "Product Analytics",
           description:
-            "Created SQL-based dashboards in Metabase for product KPI monitoring and marketing campaign insights.",
-        },
-      ],
-    },
-    {
-      company: "OpenInApp",
-      role: "Frontend Engineer Intern",
-      period: "May 2023 – September 2023",
-      location: "Bangalore",
-      highlights: [
-        {
-          title: "Performance Optimization",
-          description:
-            "Rebuilt B2B dashboard, improving Lighthouse score from 50 to 89.",
-        },
-        {
-          title: "Role-Based Access Control",
-          description: "Implemented user management system for agency admins.",
-        },
-        {
-          title: "Campaign Management",
-          description:
-            "Built 'Barter-box' for campaign creation and applicant tracking.",
-        },
-        {
-          title: "Creator Onboarding",
-          description: "Developed 'Creator-flow' for influencer management.",
-        },
-        {
-          title: "Payment Integration",
-          description:
-            "Integrated payment system with error handling and redirection.",
+            "Built SQL-based dashboards in Metabase tracking funnel KPIs, giving marketing the data to measure and optimize campaigns across the growth funnel.",
         },
       ],
     },
